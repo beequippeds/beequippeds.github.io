@@ -66,8 +66,8 @@
         <label for="hotel_name">Hotel Benutzername:</label>
         <input type="text" id="hotel_name" name="hotel_name" required><br>
 
-        <label for="hotel_email">Hotel Kennwort:</label>
-        <input type="text" id="hotel_email" name="hotel_emaild" required><br>
+        <label for="hotel_email">Hotel Email:</label>
+        <input type="text" id="hotel_email" name="hotel_email" required><br>
 
         <hr>
 
