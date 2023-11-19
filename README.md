@@ -1,7 +1,5 @@
 # beequippeds.github.io
-!DOCTYPE html>
 <html lang="de">
-
 
 <head>
     <meta charset="UTF-8">
@@ -102,46 +100,5 @@
         <p>&copy; 2023 eBike Buchungsplattform. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
-<!DOCTYPE html>
-<html lang="de">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buchungsbestätigung</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: blue;
-            color: white;
-        }
-
-        header {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-
-        hr {
-            border: 1px solid violet; /* Lila Linie */
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
-</head>
-
-
-    <footer>
-        <p>&copy; 2023 eBike Buchungsplattform. Alle Rechte vorbehalten.</p>
-    </footer>
-</body>
-
-</html>
 </html>
