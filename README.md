@@ -11,7 +11,7 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
-            background-color: #f0f0f0;
+            background-color:blue;
         }
 
         header {
@@ -59,15 +59,15 @@
 
 <body>
     <header>
-        <h1>eBike Buchung</h1>
+        <h1>Hotel eBike Buchungsportal</h1>
     </header>
 
     <form action="booking.php" method="post">
-        <label for="hotel_username">Hotel Benutzername:</label>
-        <input type="text" id="hotel_username" name="hotel_username" required><br>
+        <label for="hotel_name">Hotel Benutzername:</label>
+        <input type="text" id="hotel_name" name="hotel_name" required><br>
 
-        <label for="hotel_password">Hotel Kennwort:</label>
-        <input type="password" id="hotel_password" name="hotel_password" required><br>
+        <label for="hotel_email">Hotel Kennwort:</label>
+        <input type="text" id="hotel_email" name="hotel_emaild" required><br>
 
         <hr>
 
@@ -91,7 +91,8 @@
 
         <label for="rental_days">Miettage:</label>
         <input type="number" id="rental_days" name="rental_days" min="1" required><br>
-
+         </div>
+       
         <label class="black-label" for="booking">Buchen:</label>
         <input type="submit" value="Buchen">
     </form>
