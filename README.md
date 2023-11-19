@@ -101,5 +101,69 @@
         <p>&copy; 2023 eBike Buchungsplattform. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
+<!DOCTYPE html>
+<html lang="de">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buchungsbestätigung</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: blue;
+            color: white;
+        }
+
+        header {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        hr {
+            border: 1px solid violet; /* Lila Linie */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Buchungsbestätigung</h1>
+    </header>
+
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $hotelname = $_POST["hotel_name"];
+        $hotelemail = $_POST["hotel_email"];
+        $mountainbikenumber = $_POST["mountain_bike_quantity"];
+        $citybikenumber = $_POST["city_bike_quantity"];
+        $touringbikenumber = $_POST["touring_bike_quantity"];
+        $rental_days = $_POST["rental_days"];
+
+        echo "<p>Vielen Dank, $hotelname, für Ihre Buchung:</p>";
+        echo "<ul>";
+        echo "<li>Anzahl der Mountain eBikes: $mountainbikenumber</li>";
+        echo "<li>Anzahl der City eBikes: $citybikenumber</li>";
+        echo "<li>Anzahl der Touring eBikes: $touringbikenumber</li>";
+        echo "<li>Miettage: $rental_days</li>";
+        echo "</ul>";
+        echo "<p>Wir werden Ihnen eine Bestätigungs-E-Mail an $hotelemail senden.</p>";
+    }
+    ?>
+    <footer>
+        <p>&copy; 2023 eBike Buchungsplattform. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+
+</html>
 </html>
